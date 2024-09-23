@@ -16,7 +16,7 @@ conda activate fl
 
 export CUDA_VISIBLE_DEVICES=0 
 export HF_HUB_OFFLINE=1
-
+export CUDA_VISIBLE_DEVICES=0 
 
 
 srun bash scripts/hf/yelp/generate.sh 
