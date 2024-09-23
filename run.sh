@@ -3,7 +3,7 @@
 #SBATCH -J test
 #SBATCH -p gpu_acmhs
 #SBATCH -N 1
-#SBATCH -t 00:30:00
+#SBATCH -t 04:59:59
 #SBATCH -o ./%j-multithread-output.txt
 #SBATCH -e ./%j-multithread-error.txt
 
