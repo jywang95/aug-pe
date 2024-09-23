@@ -14,6 +14,8 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 
-nvidia-smi
+export CUDA_VISIBLE_DEVICES=0 
 
-srun bash ./scripts/embeddings.sh --yelp  
+nvidia-smi
+srun bash scripts/hf/yelp/generate.sh 
+
