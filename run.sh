@@ -16,6 +16,9 @@ conda activate fl
 
 export CUDA_VISIBLE_DEVICES=0 
 
-nvidia-smi
+export TRANSFORMERS_OFFLINE=1
+export HF_DATASETS_OFFLINE=1
+
+
 srun bash scripts/hf/yelp/generate.sh 
 
