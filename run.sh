@@ -6,7 +6,7 @@
 #SBATCH -t 00:30:00
 #SBATCH -o ./%j-multithread-output.txt
 #SBATCH -e ./%j-multithread-error.txt
-#SBATCH -G 1
+
 
 
 
@@ -15,8 +15,6 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 
-export CUDA_VISIBLE_DEVICES=0 
-export HF_HUB_OFFLINE=1
 
 
 
