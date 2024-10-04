@@ -8,7 +8,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH -J multithread-test-job
 #SBATCH --mem=32g
-#SBATCH -t 00:60:00
+#SBATCH -t 02:00:00
 #SBATCH -o ./%j-multithread-output.txt
 #SBATCH -e ./%j-multithread-error.txt
 #SBATCH --mail-type=FAIL
@@ -18,4 +18,5 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fresco
 
+srun bash scripts/embeddings.sh --yelp  
 srun bash scripts/hf/yelp/generate.sh

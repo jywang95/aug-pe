@@ -45,8 +45,6 @@ fi
 done
 echo load data from ${data_checkpoint_args} ${args}
 
-export CUDA_VISIBLE_DEVICES=0 
-export HF_HUB_OFFLINE=1
 
 
 ### run PE
