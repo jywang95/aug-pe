@@ -16,6 +16,6 @@
 ##SBATCH -q debug
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate FedLLM
+conda activate fresco
 
 srun bash scripts/hf/yelp/generate.sh
