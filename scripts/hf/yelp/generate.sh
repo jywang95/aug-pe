@@ -45,7 +45,7 @@ fi
 done
 echo load data from ${data_checkpoint_args} ${args}
 
-
+export CUDA_VISIBLE_DEVICES=0 
 
 ### run PE
 python main.py ${args} ${data_checkpoint_args} \
