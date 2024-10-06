@@ -15,6 +15,5 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate fl
 
-bash scripts/embeddings.sh --yelp 
 srun bash scripts/hf/yelp/generate.sh 
 
