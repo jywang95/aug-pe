@@ -3,7 +3,7 @@ var_type="yelp_rephrase_tone"
 feat_ext="stsb-roberta-base-v2"
 length=64
 temperature=1.4
-num_seed_samples=500
+num_seed_samples=1000
 lookahead_degree=0
 k=1 # number of variations
 L=$((k+1))
@@ -46,6 +46,7 @@ done
 echo load data from ${data_checkpoint_args} ${args}
 
 export CUDA_VISIBLE_DEVICES=0 
+export HF_HUB_OFFLINE=1
 
 ### run PE
 python main.py ${args} ${data_checkpoint_args} \
