@@ -19,3 +19,4 @@ conda activate fl
 
 srun bash scripts/hf/yelp/generate.sh 
 
+bash scripts/embeddings.sh --yelp 
