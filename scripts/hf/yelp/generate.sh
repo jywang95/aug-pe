@@ -1,7 +1,7 @@
 mlm_prob=0.5
 var_type="yelp_rephrase_tone"
 feat_ext="stsb-roberta-base-v2"
-length=256
+length=512
 temperature=1.4
 num_seed_samples=500
 lookahead_degree=0
@@ -10,7 +10,7 @@ L=$((k+1))
 init_L=${L}
 num_samples=$((L*num_seed_samples))
 echo generating $num_samples samples
-epochs=20
+epochs=10
 word_var_scale=0
 select_syn_mode=rank
 model_type="openai-community/gpt2"
