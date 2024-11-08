@@ -1,9 +1,9 @@
 mlm_prob=0.5
 var_type="yelp_rephrase_tone"
 feat_ext="stsb-roberta-base-v2"
-length=64
+length=128
 temperature=1.4
-num_seed_samples=4000
+num_seed_samples=1000
 lookahead_degree=0
 k=4 # number of variations
 L=$((k+1))
