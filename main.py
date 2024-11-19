@@ -98,7 +98,7 @@ def main():
         synthetic_features = extract_features(
             data=seed_syn_samples,
             batch_size=args.feature_extractor_batch_size,
-            model_name=args.feature_extractor,
+            model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
 
         )
         compute_fid(synthetic_features, all_private_features, args.feature_extractor,
