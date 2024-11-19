@@ -1,6 +1,6 @@
 mlm_prob=0.5
 var_type="yelp_rephrase_tone"
-feat_ext="stsb-roberta-base-v2"
+feat_ext="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0"
 length=128
 temperature=1.4
 num_seed_samples=8000
