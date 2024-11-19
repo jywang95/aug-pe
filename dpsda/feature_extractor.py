@@ -12,6 +12,7 @@ def extract_features(
         model_name="all-mpnet-base-v2"):
     # If available, the model is automatically executed on the GPU. You can specify the device for the model like this:
 
+    
     model = SentenceTransformer(model_name)  # device='cuda',
     model.eval()
 

@@ -39,7 +39,8 @@ all_private_samples, all_private_labels, private_labels_counter, private_labels_
 all_private_features = extract_features(
     data=all_private_samples,
     batch_size=10000,
-    model_name=feature_extractor,
+    # model_name=feature_extractor,
+    model_name = "/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
 )
 
 log_embeddings(all_private_features, all_private_labels[:len(all_private_features)],
