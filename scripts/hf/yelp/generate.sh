@@ -13,7 +13,8 @@ echo generating $num_samples samples
 epochs=10
 word_var_scale=0
 select_syn_mode=rank
-model_type="openai-community/gpt2"
+# model_type="openai-community/gpt2"
+model_type="gpt2"
 noise=0
 args=""
 cls_batch_size=32
