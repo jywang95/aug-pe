@@ -39,4 +39,4 @@ export HF_DATASETS_CACHE="/lustre/orion/med117/scratch/jaywang67/huggingface_cac
 export TRANSFORMERS_OFFLINE=1
 export HF_DATASETS_OFFLINE=1
 
-srun bash scripts/hf/yelp/generate.sh 
+srun bash scripts/embeddings.sh --yelp  
