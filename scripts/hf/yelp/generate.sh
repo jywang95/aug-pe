@@ -1,7 +1,7 @@
 mlm_prob=0.5
 var_type="yelp_rephrase_tone"
 feat_ext="stsb-roberta-base-v2"
-length=256
+length=128
 temperature=1.4
 num_seed_samples=8000
 lookahead_degree=0

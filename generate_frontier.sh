@@ -1,14 +1,13 @@
 #!/bin/bash
 #SBATCH -A med117
-#SBATCH -p batch
+#SBATCH -p extended
 #SBATCH -N 1
-#SBATCH -J synthetic-data-task
-#SBATCH -t 02:00:00
+#SBATCH -J fl-task
+#SBATCH -t 23:59:59
 #SBATCH -o ./%j-multithread-output.txt
 #SBATCH -e ./%j-multithread-error.txt
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=w7j@ornl.gov
-#SBATCH -q debug
 
 
 
