@@ -3,7 +3,7 @@
 #SBATCH -p batch
 #SBATCH -N 1
 #SBATCH -J mlm-task
-#SBATCH -t 02:00:00
+#SBATCH -t 00:30:00
 #SBATCH -o ./%j-multithread-output.txt
 #SBATCH -e ./%j-multithread-error.txt
 #SBATCH --mail-type=FAIL,END
