@@ -59,7 +59,8 @@ def main():
         all_private_features = extract_features(
             data=all_private_samples,
             batch_size=args.feature_extractor_batch_size,
-            model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
+            # model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
+            model_name = args.feature_extractor,
         )
 
     # Generating initial synthetic samples.
@@ -98,7 +99,8 @@ def main():
         synthetic_features = extract_features(
             data=seed_syn_samples,
             batch_size=args.feature_extractor_batch_size,
-            model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
+            model_name = args.feature_extractor,
+            # model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
 
         )
         compute_fid(synthetic_features, all_private_features, args.feature_extractor,
@@ -182,7 +184,8 @@ def main():
             sub_packed_features = extract_features(
                 data=packed_samples[:, i],
                 batch_size=args.feature_extractor_batch_size,
-                model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
+                # model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
+                model_name = args.feature_extractor,
 
             )
             packed_features.append(sub_packed_features)
@@ -323,8 +326,8 @@ def main():
             synthetic_features = extract_features(
                 data=all_selected_samples,
                 batch_size=args.feature_extractor_batch_size,
-                model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
-
+                # model_name="/lustre/orion/med117/scratch/jaywang67/huggingface_cache/models--sentence-transformers--stsb-roberta-base-v2/snapshots/da156adec0449691b69ab9e867d8bca931ec07a0",
+                model_name = args.feature_extractor,
             )
             compute_fid(synthetic_features, all_private_features, args.feature_extractor,
                         folder=args.result_folder,  step=t, log_online=args.log_online)
