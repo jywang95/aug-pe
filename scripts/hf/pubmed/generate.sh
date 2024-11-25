@@ -1,11 +1,11 @@
 mlm_prob=0.6
 var_type="pubmed_rephrase_tone"
 feat_ext="sentence-t5-base"
-length=448
+length=512
 temperature=1.0
-num_seed_samples=75
+num_seed_samples=60
 lookahead_degree=0
-k=3 # number of variations
+k=4 # number of variations
 L=$((k+1))
 init_L=${L}
 num_samples=$((L*num_seed_samples))
