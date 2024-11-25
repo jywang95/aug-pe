@@ -1,7 +1,7 @@
 mlm_prob=0.6
 var_type="pubmed_rephrase_tone"
 feat_ext="sentence-t5-base"
-length=512
+length=448
 temperature=1.0
 num_seed_samples=60
 lookahead_degree=0
@@ -13,7 +13,7 @@ echo generating $num_samples samples
 epochs=20
 word_var_scale=0
 select_syn_mode=rank
-model_type=gpt2-large
+model_type=gpt2
 noise=0
 args=""
 api="HFGPT"
