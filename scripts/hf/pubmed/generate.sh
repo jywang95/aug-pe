@@ -10,11 +10,11 @@ L=$((k+1))
 init_L=${L}
 num_samples=$((L*num_seed_samples))
 echo generating $num_samples samples
-epochs=20
+epochs=10
 word_var_scale=0
 select_syn_mode=rank
 model_type=gpt2
-noise=0
+noise=161.5
 args=""
 api="HFGPT"
 feature_extractor_batch_size=1024
